@@ -1,0 +1,8 @@
+# Speech-to-text via CTranslate2 (fast CPU/GPU inference, no torch needed).
+# Pulls in ctranslate2, huggingface-hub, tokenizers, onnxruntime (Silero VAD) and av (decoding).
+faster-whisper>=1.2.1
+
+# PyAV 19.0.0 removed the `metadata_errors` kwarg that faster-whisper 1.2.1 passes
+# to av.open() ("open() got an unexpected keyword argument 'metadata_errors'"),
+# so keep PyAV on the 14-18 range until upstream catches up.
+av>=14,<19

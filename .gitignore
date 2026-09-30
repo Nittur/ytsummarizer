@@ -1,0 +1,23 @@
+# Local data -- recordings, generated transcripts and model weights never go to
+# GitHub; only transcribe.py / README.md / requirements.txt are tracked.
+ytaudio/
+transcripts/
+models/
+
+# Virtual environment
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Checkpoints flushed while a long file is still decoding
+*.partial.*
+
+# Logs and editor/OS junk
+*.log
+.DS_Store
+.vscode/
+.idea/
